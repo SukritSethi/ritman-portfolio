@@ -7,11 +7,11 @@ const Navbar = () => {
     <div className=" w-full h-16 bg-white flex justify-between">
       <NavLink
         className={({ isActive }) =>
-          isActive ? "activeClassName h-16" : "h-16"
+          isActive ? "h-16" : "h-16"
         }
         to="/"
       >
-        <div className="h-16">
+        <div className="h-16 pl-2">
           <img src={logo} className=" object-cover w-40 h-16" alt="" />
         </div>
       </NavLink>
@@ -53,10 +53,10 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) => {
-            return isActive ? "underline" : "";
+            return isActive ? "underline decoration-red-main" : "";
           }}
         >
-          <div className="mx-5 mt-5 hover:cursor-pointer text-red-main hover:underline">
+          <div className="mx-5 mt-5 hover:cursor-pointer text-red-main decoration-red-main hover:underline">
             Contact us
           </div>
         </NavLink>
